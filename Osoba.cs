@@ -4,7 +4,7 @@ using System.Text;
 
 namespace s32429_apbd_cw1
 {
-    public class Osoba
+    public class Osoba : PESELValidator
     {
         private string _imie;
         private string _nazwisko;
@@ -46,7 +46,8 @@ namespace s32429_apbd_cw1
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentException("PESEL nie może być pusty.", nameof(Pesel));
-                _pesel = value;
+                if (((PESELValidator)this).isValidPESEL(value))
+                    _pesel = value;
             }
         }
     }
