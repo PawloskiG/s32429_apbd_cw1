@@ -19,6 +19,20 @@ namespace s32429_apbd_cw1
 
             return avg;
         }
+
+        public int CalculateMax(int[] values)
+        {
+            int max = values[0];
+            for (int i = 1; i < values.Length; i++)
+            {
+                if (values[i] > max)
+                {
+                    max = values[i];
+                }
+            }
+            return max;
+        }
+
         public static void Main(string[] args)
         {
 
