@@ -48,6 +48,9 @@ namespace s32429_apbd_cw1
             {
                 Console.WriteLine(ex.Message);
             }
+
+            int maxValue = new Program().CalculateMax(numbers);
+            Console.WriteLine($"Max value: {maxValue}");
         }
     }
 }
