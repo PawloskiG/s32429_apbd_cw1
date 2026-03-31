@@ -35,7 +35,7 @@ namespace s32429_apbd_cw1
 
         public int CalculateMin(int[] values)
         {
-            int min = 0;
+            int min = values[0];
             for (int i = 1; i < values.Length; i++)
             {
                 if (values[i] < min)
