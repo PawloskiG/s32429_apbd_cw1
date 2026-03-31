@@ -21,7 +21,7 @@ namespace s32429_apbd_cw1
         }
         public static void Main(string[] args)
         {
-
+            int [] numbers = { 1, 2, 3, 4, 5, -6, 7 }; 
             try
             {
                 var pawel = new Osoba("Paweł", "Kowalski", "90080375334");
