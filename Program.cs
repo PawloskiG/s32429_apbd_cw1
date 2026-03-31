@@ -6,6 +6,19 @@ namespace s32429_apbd_cw1
 {
     public class Program
     {
+        public int CalculateAverage(int[] values)
+        {
+            int avg = 0;
+
+            for(int i = 0; i < values.Length; i++)
+            {
+                avg += values[i];
+            }
+
+            avg = (avg / values.Length);
+
+            return avg;
+        }
         public static void Main(string[] args)
         {
 
