@@ -62,8 +62,8 @@ namespace s32429_apbd_cw1
                 Console.WriteLine(ex.Message);
             }
 
-            int minValue = new Program().CalculateMin(numbers);
-            Console.WriteLine($"Max value: {minValue}");
+            float avgValue = new Program().CalculateAverage(numbers);
+            Console.WriteLine($"Average value: {avgValue}");
         }
     }
 }
