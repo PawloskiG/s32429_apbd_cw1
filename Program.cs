@@ -33,6 +33,19 @@ namespace s32429_apbd_cw1
             return max;
         }
 
+        public int CalculateMin(int[] values)
+        {
+            int min = 0;
+            for (int i = 1; i < values.Length; i++)
+            {
+                if (values[i] < min)
+                {
+                    min = values[i];
+                }
+            }
+            return min;
+        }
+
         public static void Main(string[] args)
         {
             int [] numbers = { 1, 2, 3, 4, 5, -6, 7 }; 
